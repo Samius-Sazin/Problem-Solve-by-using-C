@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main()
+{
+    char ch,str1[50],str2[100];
+    scanf("%c %s",&ch,&str1);
+    scanf("\n");
+    gets(str2);
+    printf("%c\n%s\n%s",ch,str1,str2);
+    return 0;
+}
