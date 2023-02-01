@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main()
+{
+ 
+    long long int n,n1,n2,fibo;
+    n1=0;
+    n2=1;
+    fibo=0;
+    scanf("%lld",&n);
+ 
+    if(n==1) printf("0\n");
+    else if(n==2) printf("0 1\n");
+    else
+    {
+        printf("0 1 ");
+        for(int i=1; i<n-2; i++)
+        {
+            fibo=n1+n2;
+            n1=n2;
+            n2=fibo;
+            printf("%lld ",fibo);
+        }
+        n1=0;
+        n2=1;
+        fibo=0;
+        for(int i=1; i<n-1; i++)
+        {
+            fibo=n1+n2;
+            n1=n2;
+            n2=fibo;
+        }
+        printf("%lld\n",fibo);
+    }
+    return 0;
+ 
+}
