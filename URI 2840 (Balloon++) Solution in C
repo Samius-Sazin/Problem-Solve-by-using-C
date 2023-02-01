@@ -1,0 +1,22 @@
+ /*ballon's volume = 4/3*pi*r^3 if
+
+the shape is spherical(brittakar)
+
+but in that case we must use
+
+1.333333333 instead of 4/3 */
+ 
+#include <stdio.h>
+int main()
+{
+    int r,l,amount;
+    float v;
+ 
+    scanf("%d %d",&r,&l);
+    v=1.333333333*3.1415*r*r*r;
+    amount=l/v;
+ 
+    printf("%d\n",amount);
+ 
+    return 0;
+}
