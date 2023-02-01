@@ -1,0 +1,48 @@
+ 
+
+#include<stdio.h>
+int main()
+{
+    double m,n,p,q,t;
+    int x;
+    do
+    {
+        do
+        {
+            scanf("%lf",&m);
+            if(m>=0 && m<=10)
+            {
+                p=m;
+            }
+ 
+            else printf("nota invalida\n");
+        }
+        while(m<0 || m>10);
+ 
+        do
+        {
+            scanf("%lf",&n);
+            if(n>=0 && n<=10)
+            {
+                q=n;
+            }
+ 
+            else printf("nota invalida\n");
+        }
+        while(n<0 || n>10);
+ 
+        t=(p+q)/2;
+        printf("media = %.2lf\n",t);
+ 
+        do
+        {
+        printf("novo calculo (1-sim 2-nao)\n");
+        scanf("%d",&x);
+        if(x==2) break;
+        }
+        while(x!=1);
+    }
+    while(x==1);
+ 
+    return 0;
+}
