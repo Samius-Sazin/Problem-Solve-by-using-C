@@ -1,0 +1,19 @@
+ 
+
+#include<stdio.h>
+int main()
+{
+    int m,i,h=1,j;
+    for(i=1; i<101; i++)
+    {
+        scanf("%d",&m);
+        if(h<m)
+        {
+            h=m;
+            j=i;
+        }
+    }
+    printf("%d\n%d\n",h,j);
+ 
+    return 0;
+}
