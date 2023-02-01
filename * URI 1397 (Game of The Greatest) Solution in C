@@ -1,0 +1,28 @@
+ 
+
+#include<stdio.h>
+int main()
+{
+    int t,m,n,M=0,N=0,A=0,B=0,i;
+    while(1)
+    {
+        A=0;
+        B=0;
+        scanf("%d",&t);
+        if(t==0) break;
+ 
+        for(i=1; i<=t; i++)
+        {
+            M=0;
+            N=0;
+            scanf("%d %d",&m,&n);
+            if(m>n) M++;
+            else if(m<n) N++;
+            A=A+M;
+            B=B+N;
+        }
+ 
+        printf("%d %d\n",A,B);
+    }
+    return 0;
+}
