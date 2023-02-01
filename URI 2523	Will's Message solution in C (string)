@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+    char str1[27];
+    int t, arr[10001], n, i;
+    while(scanf("%s", &str1) != EOF)
+    {
+        scanf("%d", &t);
+        for (i = 0; i < t; i++)
+        {
+            scanf("%d", &arr[i]);
+        }
+        for (i = 0; i < t; i++)
+        {
+            n = arr[i];
+            printf("%c", str1[n - 1]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
