@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int x,y,i,m;
+    scanf("%d %d",&x,&y);
+    m=x;
+    for(i=1; i<=y; i++)
+    {
+        if(i==x)
+        {
+            printf("%d",i); //here print the last number without space and then print new line
+            printf("\n");
+            x=x+m;
+        }
+        else
+            printf("%d ",i);
+    }
+ 
+    return 0;
+}
