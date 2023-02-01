@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    char N[101]; //N is a string
+    int i,count1=0;
+    scanf("%s",&N);
+ 
+    for(i=0; N[i]!='\0'; i++)
+    {
+        if(N[i]=='1') count1++;
+    }
+ 
+    if(count1%2==0) N[i]='0';     //if value of count1 is even/odd then
+    else N[i]='1';                //0/1 will be added at the last of the
+    N[i+1]='\0';                  //string N. So '\0' valu wil be replaced
+    printf("%s\n",N);             //by 0/1.  so we need to add '\0' after
+                                  //the replaced value in line 15.
+    return 0;
+}
