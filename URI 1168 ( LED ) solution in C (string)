@@ -1,0 +1,64 @@
+//--bismillah--
+
+#include<stdio.h>
+
+int main()
+
+{
+
+    char ch[101],j; //ch-string, j-character type variable
+
+    int i,k,t,c; //i-used in FOR loop for TEST CASE(T),k-usen in while loop,c for count
+
+    scanf("%d",&t);
+
+    for(i=1; i<=t; i++)
+
+    {
+
+        c=0;
+
+        k=0;
+
+        scanf("%s",&ch);
+
+        while(ch[k] != '\0')
+
+        {
+
+            j=ch[k];
+
+            if(j=='1') c=c+2;
+
+            else if(j=='2') c=c+5;
+
+            else if(j=='3') c=c+5;
+
+            else if(j=='4') c=c+4;
+
+            else if(j=='5') c=c+5;
+
+            else if(j=='6') c=c+6;
+
+            else if(j=='7') c=c+3;
+
+            else if(j=='8') c=c+7;
+
+            else if(j=='9') c=c+6;
+
+            else if(j=='0') c=c+6;
+
+            k++;
+
+        }
+
+        printf("%d leds\n",c);
+
+    }
+
+
+
+    return 0;
+
+}
+
