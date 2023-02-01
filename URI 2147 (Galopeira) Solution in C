@@ -1,0 +1,16 @@
+ #include<stdio.h>
+
+int main()
+{
+    int t,length;
+    char str[10001];
+    scanf("%d",&t);
+    for(int i=0;i<t;i++)
+    {
+        scanf("%s",&str);
+        length=strlen(str);
+        printf("%.2f\n",length/100.0);
+ 
+    }
+    return 0;
+}
