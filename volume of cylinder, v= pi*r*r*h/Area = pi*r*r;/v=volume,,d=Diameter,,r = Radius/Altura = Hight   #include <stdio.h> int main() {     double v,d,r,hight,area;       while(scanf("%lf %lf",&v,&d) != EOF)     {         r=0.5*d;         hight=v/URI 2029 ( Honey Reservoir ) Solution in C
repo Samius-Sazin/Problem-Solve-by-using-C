@@ -1,0 +1,20 @@
+//volume of cylinder, v= pi*r*r*h
+//Area = pi*r*r;
+//v=volume,,d=Diameter,,r = Radius
+//Altura = Hight
+ 
+#include <stdio.h>
+int main()
+{
+    double v,d,r,hight,area;
+ 
+    while(scanf("%lf %lf",&v,&d) != EOF)
+    {
+        r=0.5*d;
+        hight=v/(3.14*r*r);
+        area=3.14*r*r;
+        printf("ALTURA = %.2lf\nAREA = %.2lf\n",hight,area);
+    }
+ 
+    return 0;
+}
