@@ -1,0 +1,19 @@
+ 
+
+#include <stdio.h>
+int main()
+{
+    int x,z,p=0,c=0,i;
+    scanf("%d%d",&x,&z);
+    while(z<=x) scanf("%d",&z);
+ 
+    for(i=x; i<z; i++)
+    {
+        p=p+i;
+        c++;
+        if(p>=z) break;
+    }
+ 
+    printf("%d\n",c);
+    return 0;
+}
