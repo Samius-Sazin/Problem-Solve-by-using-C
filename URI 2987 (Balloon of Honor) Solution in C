@@ -1,0 +1,17 @@
+ #include<stdio.h>
+
+int main()
+{
+    int ascii,i,count=0;
+    char ch;
+    scanf("%c",&ch);
+ 
+    ascii=ch;//convert later to number
+    for(i=65; i<=ascii; i++)
+    {
+        count++;
+    }
+    printf("%d\n",count);
+ 
+    return 0;
+}
