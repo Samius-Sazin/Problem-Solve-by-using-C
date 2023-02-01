@@ -1,0 +1,15 @@
+ 
+
+#include<stdio.h>
+int main()
+{
+    int n,k;
+    scanf("%d",&n);
+    for(k=1; k<=n; k++)
+    {
+        printf("Ho");
+        if(k!=n) printf(" ");
+    }
+    printf("!\n");
+    return 0;
+}
