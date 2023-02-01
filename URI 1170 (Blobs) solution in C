@@ -1,0 +1,22 @@
+ 
+
+#include<stdio.h>
+int main()
+{
+    int t,count;
+    float n;
+ 
+    scanf("%d",&t);
+    for(int i=0; i<t; i++)
+    {
+        count=0;
+        scanf("%f",&n);
+        while(n>1)
+        {
+            n=n/2;
+            count++;
+        }
+        printf("%d dias\n",count);
+    }
+    return 0;
+}
