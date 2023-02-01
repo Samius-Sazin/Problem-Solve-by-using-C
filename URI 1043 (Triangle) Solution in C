@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    float A,B,C;
+    scanf("%f%f%f",&A,&B,&C);
+ 
+    if(A+B==C || A+C==B || B+C==A)             /*for triangle sum of 2 sides must                                     
+        printf("Area = %.1f\n",((A+B)/2)*C);     be greater then 3rd side*/
+    else
+        printf("Perimetro = %.1f\n",A+B+C);   //area of triangle = A+B+C
+    return 0;
+}
