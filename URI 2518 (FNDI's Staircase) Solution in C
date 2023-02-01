@@ -1,0 +1,33 @@
+ /*n=number of stairs
+
+h=hight,,acts as a side of the triangle
+c=acts as aside of triangle
+ 
+hypo=is the hypotenuse of the triangle.
+hypo acts as the length of every stairs,
+if num of stairs then total length
+of the new square is n*hypo .
+ 
+l = length of stair,,but acts as the
+width of the new square.
+ 
+area=the area of new square or ramp surface.
+*/
+ 
+ 
+#include <stdio.h>
+int main()
+{
+    int n,h,c,l; //hypotenuse=otivuj/longest side of a right triangle
+    float area,hypo,L; 
+ 
+    while(scanf("%d %d %d %d",&n, &h, &c, &l) != EOF)
+    {
+        hypo=sqrt(((float)h*h)+(c*c));
+        L=n*hypo;
+        area =(L*l)/10000;
+        printf("%.4f\n",area);
+    }
+ 
+    return 0;
+}
