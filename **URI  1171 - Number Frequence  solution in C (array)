@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+    int t,n,arr[2001];
+
+    for(int i=0; i<2001; i++)
+    {
+        arr[i]=0;
+    }
+
+    scanf("%d",&t);
+    while(t--)
+    {
+        scanf("%d",&n);
+        arr[n]++;
+    }
+    /*if suppose n=5 then the index of arr[5] will be
+      increse from 0 to 1. so if i increment or decrement
+      an array then the value of the array will increse or
+      decrese, not the address of array. */
+
+    for(int i=0; i<2001; i++)
+    {
+        if(arr[i] != 0)
+        {
+            printf("%d aparece %d vez(es)\n",i,arr[i]);
+        }
+    }
+
+    return 0;
+}
