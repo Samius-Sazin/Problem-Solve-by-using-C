@@ -3,7 +3,7 @@ int main()
 {
     int t,n,arr[2001];
 
-    for(int i=0; i<2001; i++)
+    for(int i=0; i<2001; i++) //make all array index 0
     {
         arr[i]=0;
     }
@@ -12,8 +12,9 @@ int main()
     while(t--)
     {
         scanf("%d",&n);
-        arr[n]++;
+        arr[n]++; //make nth array index value 0 to 1,if n is same then increse 2 from 1.
     }
+    
     /*if suppose n=5 then the index of arr[5] will be
       increse from 0 to 1. so if i increment or decrement
       an array then the value of the array will increse or
