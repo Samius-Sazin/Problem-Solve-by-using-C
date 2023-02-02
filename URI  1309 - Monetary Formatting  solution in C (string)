@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    int c,l,len; //c=cent
+    char s1[1000];//s1=string to input $
+    while(scanf("%s %d",&s1, &c)!=EOF)
+    {
+        len = strlen(s1);
+        l = len-1;
+
+        printf("$");
+        for(int i=0; s1[i]!= '\0'; i++)
+        {
+            printf("%c",s1[i]);
+            if(l%3==0 && l!=0)  /*l!=0 -> if i modulas 1 by 3
+                                  then a coma print at the last,
+                                  this condition prevent that","*/
+                printf(",");
+            l--;
+        }
+
+        if(c<10) printf(".0%d\n",c);
+        else printf(".%d\n",c);
+    }
+
+    return 0;
+}
