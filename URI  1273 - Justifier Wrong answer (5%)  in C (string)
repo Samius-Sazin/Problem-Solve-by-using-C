@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<string.h>
+
+struct string
+{
+    char name[51];
+};
+
+int main()
+{
+    int t,i,j,length[50],max,diff,f; //diff=difference between large and others string
+
+    while(scanf("%d",&t) && t!=0)
+    {
+        struct string str[t];
+        max=0;
+        for(i=0; i<t; i++)
+        {
+            scanf("%s",&str[i].name); //here scan the string
+            length[i]=strlen(str[i].name); //here string length taken out
+            if(length[i]>max) max=length[i]; //find out the max string
+        }
+        if(f==1) printf("\n");
+        for(i=0; i<t; i++)
+        {
+            if(length[i] < max)
+            {
+                diff=max-length[i]; //take out the differences
+                char space[diff];
+
+                for(j=0; j<diff; j++)
+                {
+                    space[j]=' ';//spaces
+                }
+                space[j]='\0';
+                strcat(space,str[i].name); //add space+name
+                printf("%s\n",space);
+            }
+            else printf("%s\n",str[i].name);
+        }
+        f=1;
+    }
+    return 0;
+}
