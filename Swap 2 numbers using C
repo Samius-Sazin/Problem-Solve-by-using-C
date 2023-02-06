@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int num1=10;
+    int num2=5;
+    int temp; /*temp is an empty varriable*/
+
+    temp=num1; /*1st put num1 value to temp.so num1 is empty and variable
+                temp value is 10.*/
+
+    num1=num2; /*Then put num2 value to num1.so now num1 value is 5
+                 instead of 10 and num2 is empty now.*/
+
+    num2=temp; /*now put temp value to num2.so,num2 value is 10.*/
+
+    printf("Number 1 = %d\nNumber 2 = %d",num1,num2);
+    return 0;
+}
