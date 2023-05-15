@@ -1,5 +1,7 @@
 /*
-Binary Search
+4
+73 67 38 33
+75 67 40 33
 */
 
 #include<iostream>
