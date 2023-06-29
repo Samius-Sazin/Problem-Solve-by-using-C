@@ -14,7 +14,7 @@ public class URI_1272
         int t = sc.nextInt();
         sc.nextLine();
 
-        for(int i=0; i<t; i++)
+        while(t-- > 0)//while(t--) Error
         {
             String str = sc.nextLine();
             String ans = "";
