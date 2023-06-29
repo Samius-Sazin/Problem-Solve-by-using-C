@@ -2,6 +2,7 @@
 Samius Sazin
 Daffodil International University(DIU)
 30/06/2023
+(my first problrm solving code in java)
 */
 import java.util.*;
 public class URI_1272
