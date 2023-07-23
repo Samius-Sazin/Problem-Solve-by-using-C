@@ -1,3 +1,7 @@
+/*
+wrong ans
+but same calculation works in c/c++
+*/
 import java.util.*;
 public class URI_1214 {
     public static void main(String args[]) {
