@@ -4,13 +4,12 @@ using namespace std;
 void solve(){
     int num; cin >> num;
 
-    vector <int> v;
+    int v[num];
     for(int i=0; i<num; i++){
-        int val; cin >> val;
-        v.push_back(val);
+        scanf("%d", &v[i]);
     }
 
-    sort(v.begin(), v.end());
+    sort(v, v+num);
 
     int mid = num/2;
     int cnt = num;
